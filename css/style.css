@@ -61,14 +61,22 @@ img {
 
 /* background color divs */
 
-.section-plum {
+.section-offwhite {
   background-color: var(--offwhite);
 }
 
-.section-blue {
+.section-lightgreen {
   background-color: var(--lightgreen);
 }
 
+.section-grey {
+  background-color: var(--grey);
+}
+.profile-img {
+  height: 500px;
+  object-fit: cover;
+  object-position: 100% 10%;
+}
 .gradient {
   background: linear-gradient(
     90deg,
@@ -207,6 +215,11 @@ nav [class*="fa-"]:hover {
   font-size: 1rem;
   font-family: var(--mono);
   margin: 0;
+}
+#projects img {
+  object-fit: scale-down;
+  max-height: 325px;
+  max-width: 565px;
 }
 #projects {
   color: var(--black);
