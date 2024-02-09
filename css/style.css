@@ -197,31 +197,36 @@ nav [class*="fa-"]:hover {
 
 /* projects section */
 
-#projects {
+#projects,
+#about {
   padding: 4rem 1rem;
 }
 
-#projects h2 {
+#projects h2,
+#about h2 {
   font-size: 2.5rem;
   margin-bottom: calc(2.5rem * 1.5);
 }
 
-#projects h3 {
-  /* color: var(--mango); */
+#projects h3,
+#about h3 {
   color: var(--sagegreen);
 }
 
-#projects h4 {
+#projects h4,
+#about h4 {
   font-size: 1rem;
   font-family: var(--mono);
   margin: 0;
 }
-#projects img {
+.projects-img {
   object-fit: scale-down;
   max-height: 325px;
   max-width: 565px;
+  background-color: var(--grey);
 }
-#projects {
+#projects,
+#about {
   color: var(--black);
 }
 
@@ -234,7 +239,8 @@ nav [class*="fa-"]:hover {
   line-height: 1.5;
 }
 
-#projects ul {
+#projects ul,
+#about ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -245,7 +251,8 @@ nav [class*="fa-"]:hover {
   font-size: 1rem;
 }
 
-#projects img {
+#projects img,
+#about img {
   margin: 2rem 0 4rem 0;
   padding: 1rem;
   border-left: 1px solid var(--mango);
@@ -276,11 +283,13 @@ footer ul {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
   }
-  #projects {
+  #projects,
+  #about {
     max-width: 1200px;
     margin: 0 auto;
   }
-  #projects img {
+  #projects img,
+  #about img {
     grid-column: 1/6;
     grid-row: 1/2;
   }
@@ -290,19 +299,23 @@ footer ul {
     order: 2;
     text-align: right;
   }
-  #projects ul {
+  #projects ul,
+  #about ul {
     justify-content: flex-end;
   }
-  #projects .reverse .text {
+  #projects .reverse .text,
+  #about .reverse .text {
     grid-column: 1/7;
     order: 2;
     text-align: left;
   }
-  #projects .reverse img {
+  #projects .reverse img,
+  #about .reverse img {
     grid-column: 6/11;
     grid-row: 1/2;
   }
-  #projects .reverse ul {
+  #projects .reverse ul,
+  #about .reverse ul {
     justify-content: flex-start;
   }
 }
